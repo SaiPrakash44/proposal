@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>A question for you</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Floating hearts (decoration) -->
+  <div class="hearts" aria-hidden="true">
+    <span>♥</span><span>♥</span><span>♥</span><span>♥</span>
+    <span>♥</span><span>♥</span><span>♥</span><span>♥</span>
+  </div>
+
+  <main class="card">
+    <div class="rose" aria-hidden="true">❦</div>
+
+    <p class="intro">To my dearest</p>
+    <h1>My Love</h1>
+
+    <p class="message">
+      Every day with you feels like my favourite chapter.<br>
+      So I have one little question to ask you...
+    </p>
+
+    <h2 class="question">Do you love me?</h2>
+
+    <!-- Choices: the six invisible zones make the "No" button slip away -->
+    <div class="choices">
+      <div class="zone z1"></div>
+      <div class="zone z2"></div>
+      <div class="zone z3"></div>
+      <div class="zone z4"></div>
+      <div class="zone z5"></div>
+      <div class="zone z6"></div>
+
+      <a class="btn yes" href="#yay">Yes</a>
+      <div class="btn no" aria-hidden="true">No</div>
+    </div>
+
+    <p class="signature">Forever yours</p>
+  </main>
+
+  <!-- Shown when she clicks "Yes" -->
+  <section class="yay" id="yay">
+    <div class="yay-card">
+      <div class="big-heart" aria-hidden="true">♥</div>
+      <h2>I knew it!</h2>
+      <p>You just made me the happiest person in the world.<br>I love you more than words can say.</p>
+      <a class="back" href="#">Ask me again</a>
+    </div>
+  </section>
+
+</body>
+</html>
